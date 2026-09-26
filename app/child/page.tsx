@@ -188,7 +188,6 @@ export default function ChildPage() {
                         width: 44,
                         height: 44,
                         border: avatar === av.src ? '3px solid #781019' : '1.5px solid #e8dccb',
-                        cursor: 'pointer',
                         padding: 0,
                         background: 'none'
                       }}

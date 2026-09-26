@@ -183,7 +183,7 @@
   font-size: 0.95rem;
   font-weight: 500;
   border: none;
-  cursor: pointer;
+  cursor: url('/cursor-santa-32.png') 10 1, pointer !important;
   text-decoration: none;
   transition: all 0.15s ease;
   text-align: left;
@@ -308,7 +308,7 @@
   font-size: 0.82rem;
   font-weight: 600;
   color: #6a5354;
-  cursor: pointer;
+  cursor: url('/cursor-santa-32.png') 10 1, pointer !important;
   transition: all 0.15s ease;
 }
 
@@ -338,7 +338,7 @@
   border: 1px solid #ede1d1;
   border-radius: var(--radius-md);
   padding: 1rem 1.25rem;
-  cursor: pointer;
+  cursor: url('/cursor-santa-32.png') 10 1, pointer !important;
   transition: all 0.18s ease;
 }
 
@@ -628,7 +628,7 @@
   border-radius: var(--radius-md);
   font-size: 1rem;
   font-weight: 700;
-  cursor: pointer;
+  cursor: url('/cursor-santa-32.png') 10 1, pointer !important;
   border: none;
   transition: all 0.15s ease;
   color: #ffffff;

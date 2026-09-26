@@ -40,12 +40,36 @@
   --shadow-lg: 0 10px 25px rgba(45, 10, 15, 0.08);
 }
 
-/* Custom Santa Hand Cursor - Clean, crisp, calibrated fingertip hotspot */
-html, body {
-  cursor: url('/cursor-santa-32.png') 10 1, auto;
+/* Universal Santa Hand Cursor - Enforced everywhere across the entire document */
+*,
+*::before,
+*::after,
+html,
+body,
+body * {
+  cursor: url('/cursor-santa-32.png') 10 1, auto !important;
 }
 
-a, button, [role="button"], [role="tab"], input, select, textarea, .wish-row-card, .btn-decision, .nav-pill, .nav-btn-minimal, .category-pill-btn, .portal-card, .btn-advance-stage {
+a,
+button,
+input,
+select,
+textarea,
+label,
+summary,
+[role="button"],
+[role="tab"],
+[tabindex],
+.wish-table-row,
+.sidebar-nav-item,
+.filter-btn,
+.btn-act,
+.portal-nav-card,
+.category-tag-btn,
+.btn-submit-wish,
+.btn-step-advance,
+.back-to-dashboard-btn,
+.back-btn-pill {
   cursor: url('/cursor-santa-32.png') 10 1, pointer !important;
 }
 
@@ -154,7 +178,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  cursor: pointer;
+  cursor: url('/cursor-santa-32.png') 10 1, pointer !important;
   transition: all 0.15s ease;
 }
 
