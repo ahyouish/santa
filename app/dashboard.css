@@ -1,0 +1,179 @@
+/* Dashboard Hub - Deep Red Background with White Typography */
+.dashboard-page-container {
+  min-height: calc(100vh - 62px);
+  background: #48090e url('/santa-banner.jpg') no-repeat top center;
+  background-size: 100% auto;
+  position: relative;
+  padding: 2.5rem 2rem 5rem 2rem;
+  color: #ffffff;
+}
+
+.dashboard-backdrop-tint {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(65, 8, 13, 0.5) 0%, rgba(72, 9, 14, 0.92) 280px, #48090e 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.dashboard-content-wrap {
+  position: relative;
+  z-index: 2;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.dashboard-hero-section {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.dashboard-category-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  color: #ffd875;
+  padding: 0.35rem 1rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.82rem;
+  font-weight: 700;
+  margin-bottom: 0.85rem;
+  letter-spacing: 0.04em;
+}
+
+.dashboard-main-title {
+  font-family: var(--font-serif);
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.65rem;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.dashboard-main-subtitle {
+  font-size: 1.08rem;
+  color: #fed8da;
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Metric summary counters */
+.metrics-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 3rem;
+}
+
+.metric-card {
+  background: rgba(45, 6, 10, 0.82);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+}
+
+.metric-number {
+  font-family: var(--font-serif);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #ffd875;
+  line-height: 1;
+  margin-bottom: 0.35rem;
+}
+
+.metric-label {
+  font-size: 0.86rem;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+/* Portal selection cards */
+.portals-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+}
+
+.portal-nav-card {
+  background: linear-gradient(180deg, #6c1017 0%, #4e0a0f 100%);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  border-radius: 20px;
+  padding: 2.2rem 2rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 0.22s ease;
+}
+
+.portal-nav-card:hover {
+  transform: translateY(-4px);
+  border-color: #ffd875;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
+  background: linear-gradient(180deg, #7a131b 0%, #580c12 100%);
+}
+
+.portal-icon-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 215, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  margin-bottom: 1.25rem;
+}
+
+.portal-card-title {
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+}
+
+.portal-card-desc {
+  font-size: 0.92rem;
+  color: #fedbdd;
+  line-height: 1.6;
+  margin-bottom: 1.75rem;
+  flex: 1;
+}
+
+.portal-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #ffd875;
+  transition: gap 0.15s ease;
+}
+
+.portal-nav-card:hover .portal-link-btn {
+  gap: 0.85rem;
+  color: #ffffff;
+}
+
+@media (max-width: 900px) {
+  .portals-container {
+    grid-template-columns: 1fr;
+  }
+  .metrics-strip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
